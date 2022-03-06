@@ -22,6 +22,21 @@
   >
         <a-marker preset="hiro">
             <a-entity id="box" geometry="primitive: box; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #4CC3D9"></a-entity>
+
+            <a-entity geometry="primitive: cylinder; height: 1.1; radius: 0.5" position="0.6 0 0.3" material="color: #E6AACE" ></a-entity>
+
+            <a-entity geometry="primitive: sphere; radius:0.5" position="-0.6 0 -0.3" material="color: #94E8B4"   ></a-entity>
+
+            <a-entity position="0 2.25 -15" particle-system="preset: snow"></a-entity>
+
+            <a-entity id="annyang" annyang-speech-recognition></a-entity>
+
+            <a-entity id="menu"
+              speech-command__show="command: show menu; type: attribute; attribute: visible; value: true;"
+              speech-command__hide="command: hide menu; type: attribute; attribute: visible; value: false;">
+
+            </a-entity>
+            
         </a-marker>
         <a-entity camera></a-entity>
         </a-scene>
