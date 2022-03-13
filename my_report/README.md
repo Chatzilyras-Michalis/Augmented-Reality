@@ -2,8 +2,8 @@
 
 ### First and Last Name: Michalis Chatzilyras
 ### University Registration Number: dpsd18132
-### GitHub Personal Profile: 
-### Augmented Reality Personal Repository: 
+### GitHub Personal Profile: https://github.com/Chatzilyras-Michalis
+### Augmented Reality Personal Repository: https://github.com/Chatzilyras-Michalis/Augmented-Reality
 
 # Introduction
 
