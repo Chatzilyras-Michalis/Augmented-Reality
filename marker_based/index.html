@@ -4,14 +4,14 @@
     <!-- we import arjs version without NFT but with marker + location based support -->
     <!--<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>-->
     <script src="build/aframe-ar.js"></script>
-    
+
     <!-- particles system component -->
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
-    
+
     <!-- speech command component -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.5.0/annyang.min.js"></script>
-    <script src="build/aframe-speech-command-component.js"></script> 
-    
+    <script src="build/aframe-speech-command-component.js"></script>
+
 
     <body style="margin : 0px; overflow: hidden;">
         <a-scene
@@ -20,21 +20,29 @@
     embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
   >
+  //Deliverable1//
         <a-marker preset="hiro">
             <a-entity id="box" geometry="primitive: box; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #4CC3D9"></a-entity>
 
-            <a-entity id="cylinder" geometry="primitive: cylinder; height: 1.1; radius: 0.5" position="0.6 0 0.3" material="color: #E6AACE" ></a-entity>
+            <a-entity geometry="primitive: cylinder; height: 1.1; radius: 0.5" position="0.6 0 0.3" material="color: #E6AACE" ></a-entity>
 
-            <a-entity id="sphere" geometry="primitive: sphere; radius:0.5" position="-0.6 0 -0.3" material="color: #94E8B4"   ></a-entity>
+            <a-entity geometry="primitive: sphere; radius:0.5" position="-0.6 0 -0.3" material="color: #94E8B4"   ></a-entity>
 
-           <a-entity id="annyang" annyang-speech-recognition></a-entity>
 
-            <a-entity id="links" position="0 2.25 -15" particle-system="preset: snow" visible="false"
-               speech-command__start="command: start; type: attribute; attribute: visible; value: true;"
-               speech-command__stop="command: stop; type: attribute; attribute: visible; value: false;">
+
+            <a-entity id="annyang" annyang-speech-recognition></a-entity>
+
+            <a-entity id="menu" position="0 2.25 -15" particle-system="preset: snow" visible = "false"
+              speech-command__show="command: show menu; type: attribute; attribute: visible; value: true;"
+              speech-command__hide="command: hide menu; type: attribute; attribute: visible; value: false;">
+
             </a-entity>
-            
-            
+
+//Deliverable2//
+            <a-marker type="pattern" url="assets/pattern-dpsd18132.patt"
+              <a-box position="0 0.5 0" materia="opacity: 0.5;"></a-box>
+            </a-marker>
+
         </a-marker>
         <a-entity camera></a-entity>
         </a-scene>
