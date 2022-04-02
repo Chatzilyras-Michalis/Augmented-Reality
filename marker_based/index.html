@@ -18,8 +18,7 @@
     vr-mode-ui="enabled: false;"
     renderer="logarithmicDepthBuffer: true;"
     embedded
-    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
-    arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3;"
+    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;"
   >
 
         <a-marker preset="hiro">
@@ -47,7 +46,7 @@
             </a-marker>
 
 
-            <a-scene '>
+            <a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
               <a-assets>
             <img id="hydrogen" src="assets/hydrogenbarcode.png" />
             <img id="oxygen" src="assets/oxygenbarcode.png" />
