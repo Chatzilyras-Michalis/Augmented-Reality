@@ -18,7 +18,7 @@
     vr-mode-ui="enabled: false;"
     renderer="logarithmicDepthBuffer: true;"
     embedded
-    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;"
+    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;rotationdetectionMode: mono_and_matrix; matrixCodeType: 3x3;"
   >
 
         <a-marker preset="hiro">
@@ -54,7 +54,7 @@
 
               <!-- marker id=0 -->
        <a-marker type="barcode" value="0">
-        <a-image src="assets/card-H.png" position="-90 0 0"></a-image>
+        <a-image src="assets/card-H.png" rotation="-90 0 0"></a-image>
        </a-marker>
 
 
@@ -62,7 +62,7 @@
 
               <!-- marker id=1 -->
        <a-marker type="barcode" value="1">
-          <a-image src="assets/card-.png" position="-90 0 0"></a-image>
+          <a-image src="assets/card-.png" rotation="-90 0 0"></a-image>
        </a-marker>
 
 
