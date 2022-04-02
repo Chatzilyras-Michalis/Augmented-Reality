@@ -34,18 +34,38 @@
 
             <a-entity id="links" position="0 2.25 -15" particle-system="preset: snow" visible = "false"
               speech-command__start="command: start; type: attribute; attribute: visible; value: true;"
-              speech-command__stop="command: stop;type: attribute; attribute: visible; value: false;">
+              speech-command__stop="command:  stop; type: attribute; attribute: visible; value: false;">
 
             </a-entity>
 
             </a-marker>
 
             <a-marker preset="pattern" type="pattern" url="assets/pattern-dpsd18132.patt">
-              <a-text position="-1 0 -1" text="value: Michalis Chatzilyras" material="color:#586BA4"></a-text>
+              <a-text position="-1 0 -1" text="value: Michalis Chatzilyras" color= "#586BA4"></a-text>
             <a-image src="assets/Grogu.png"></a-image>
-
-
             </a-marker>
+
+
+            <a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+
+
+              <!-- marker id=0 -->
+       <a-marker type="barcode" value="0">
+        <a-image src="assets/hydrogen.png" position="-90 0 0"></a-image>
+       </a-marker>
+
+
+
+
+              <!-- marker id=1 -->
+       <a-marker type="barcode" value="1">
+          <a-image src="assets/oxygen.png" position="-90 0 0"></a-image>
+       </a-marker>
+
+
+
+            </a-scene>
+
 
 
         <a-entity camera></a-entity>
