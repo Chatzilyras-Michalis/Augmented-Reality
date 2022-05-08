@@ -64,7 +64,13 @@
 
               <!-- marker id=0 -->
        <a-marker type="barcode" value="0" id="HYDROGENN">
-            <a-image src="assets/Grogu.png"></a-image>
+         <a-image src="assets/card-H.png" rotation="-90 0 0"></a-image>
+         <a-entity   position="0 0 0"
+           rotation="0 0 0"
+           scale="0.10 0.10 0.10"
+           gltf-model="#hydrogenmodel"
+           animation__rotate = "property: rotation; dur: 6900; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;">
+        </a-entity>
        </a-marker>
 
 
