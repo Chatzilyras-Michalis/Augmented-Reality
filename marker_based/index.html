@@ -14,54 +14,7 @@
 
 
     <body style="margin : 0px; overflow: hidden;">
-      <script>
-             AFRAME.registerComponent("marker-distance", {
-
-                 init: function () {
-                 this.hydro = document.querySelector('#HYDROMODEL')
-                 this.oxy = document.querySelector('#OXYMODEL')
-                 this.wata = document.querySelector('#H2Oatom')
-                 this.marker1 = document.querySelector('OXYGENN')
-                 this.marker2 = document.querySelector('#HYDROGENN')
-                 this.oxycard = document.querySelector('#OXYIMAGE')
-                 this.hydrocard = document.querySelector('#HYDROIMAGE')
-                 this.h2ocard = document.querySelector('#H2OIMAGE')
-             },
-             tick: function()
-             {
-                 var marker1Pos, marker2Pos, markerDistance
-
-                 marker1Pos = new THREE.Vector3();
-                 this.marker1.object3D.getWorldPosition(marker1Pos);
-
-                 marker2Pos = new THREE.Vector3();
-                 this.marker2.object3D.getWorldPosition(marker2Pos);
-
-                 markerDistance = marker1Pos.distanceTo(marker2Pos);
-
-                 if (markerDistance<2)
-                 {
-
-                     this.hydro.setAttribute("visible", false)
-                     this.oxy.setAttribute("visible", false)
-                     this.wata.setAttribute("visible", true)
-                     this.oxycard.setAttribute("visible", false)
-                     this.hydrocard.setAttribute("visible", false)
-                     this.h2ocard.setAttribute("visible", true)
-                 }
-                 else
-                 {
-
-                     this.hydro.setAttribute("visible",true)
-                     this.oxy.setAttribute("visible",true)
-                     this.wata.setAttribute("visible", false)
-                     this.oxycard.setAttribute("visible", true)
-                     this.hydrocard.setAttribute("visible", true)
-                     this.h2ocard.setAttribute("visible", false)
-                 }
-             },
-         });
-         </script>
+    
 
         <a-scene
     vr-mode-ui="enabled: false;"
