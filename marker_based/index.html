@@ -14,6 +14,55 @@
 
 
     <body style="margin : 0px; overflow: hidden;">
+      <script>
+             AFRAME.registerComponent("marker-distance", {
+
+                 init: function () {
+                 this.hydro = document.querySelector('#HYDROMODEL')
+                 this.oxy = document.querySelector('#OXYMODEL')
+                 this.wata = document.querySelector('#H2Oatom')
+                 this.marker1 = document.querySelector('OXYGENN')
+                 this.marker2 = document.querySelector('#HYDROGENN')
+                 this.oxycard = document.querySelector('#OXYIMAGE')
+                 this.hydrocard = document.querySelector('#HYDROIMAGE')
+                 this.h2ocard = document.querySelector('#H2OIMAGE')
+             },
+             tick: function()
+             {
+                 var marker1Pos, marker2Pos, markerDistance
+
+                 marker1Pos = new THREE.Vector3();
+                 this.marker1.object3D.getWorldPosition(marker1Pos);
+
+                 marker2Pos = new THREE.Vector3();
+                 this.marker2.object3D.getWorldPosition(marker2Pos);
+
+                 markerDistance = marker1Pos.distanceTo(marker2Pos);
+
+                 if (markerDistance<2)
+                 {
+
+                     this.hydro.setAttribute("visible", false)
+                     this.oxy.setAttribute("visible", false)
+                     this.wata.setAttribute("visible", true)
+                     this.oxycard.setAttribute("visible", false)
+                     this.hydrocard.setAttribute("visible", false)
+                     this.h2ocard.setAttribute("visible", true)
+                 }
+                 else
+                 {
+
+                     this.hydro.setAttribute("visible",true)
+                     this.oxy.setAttribute("visible",true)
+                     this.wata.setAttribute("visible", false)
+                     this.oxycard.setAttribute("visible", true)
+                     this.hydrocard.setAttribute("visible", true)
+                     this.h2ocard.setAttribute("visible", false)
+                 }
+             },
+         });
+         </script>
+
         <a-scene
     vr-mode-ui="enabled: false;"
     renderer="logarithmicDepthBuffer: true;"
@@ -38,7 +87,7 @@
               speech-command__stop="command:  stop; type: attribute; attribute: visible; value: false;">
 
             </a-entity>
-
+<a-entity marker-distance></a-entity>
             </a-marker>
 
             <a-marker preset="pattern" type="pattern" url="assets/pattern-dpsd18132.patt">
@@ -48,10 +97,7 @@
 
 
 
-              <a-assets>
-            <img id="hydrogen" src="assets/hydrogenbarcode.png" />
-            <img id="oxygen" src="assets/oxygenbarcode.png" />
-             </a-assets>
+
 
 
 
@@ -61,11 +107,13 @@
      <a-assets>
         <a-asset-item id="oxygenmodel" src="assets/OxygenModel.gltf"></a-asset-item>
 	   </a-assets>
-
+     <a-assets>
+        <a-asset-item id="h2omodel" src="assets/h2o.gltf"></a-asset-item>
+     </a-assets>
               <!-- marker id=0 -->
-       <a-marker type="barcode" value="0" id="HYDROGENN">
-         <a-image src="assets/card-H.png" rotation="-90 0 0" geometry="width: 2.5; height: 2.5"></a-image>
-         <a-entity   position="0 1.7 0"
+       <a-marker id="HYDROGENN" type="barcode" value="0" >
+         <a-image id="HYDROIMAGE" src="assets/card-H.png" rotation="-90 0 0" geometry="width: 2.5; height: 2.5"></a-image>
+         <a-entity id="HYDROMODEL"  position="0 1.7 0"
            rotation="0 0 0"
            scale="0.10 0.10 0.10"
            gltf-model="#hydrogenmodel"
@@ -77,14 +125,22 @@
 
 
               <!-- marker id=1 -->
-       <a-marker type="barcode" value="1"id="OXYGENN">
-          <a-image src="assets/card-O.png" rotation="-90 0 0" geometry="width: 2.5; height: 2.5"></a-image>
-          <a-entity   position="0 1.7 0"
+       <a-marker id="OXYGENN" type="barcode" value="1">
+          <a-image id="OXYIMAGE" src="assets/card-O.png" rotation="-90 0 0" geometry="width: 2.5; height: 2.5"></a-image>
+          <a-entity  id="OXYMODEL" position="0 1.7 0"
             rotation="0 0 0"
             scale="0.10 0.10 0.10"
             gltf-model="#oxygenmodel"
             animation__rotate = "property: rotation; dur: 6900; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;">
          </a-entity>
+
+  <a-image id="H2OIMAGE" src="assets/card-H2O.png" rotation="-90 0 0" geometry="width: 2.5; height: 2.5"></a-image>
+         <a-entity   position="0 1.7 0"
+           rotation="0 0 0"
+           scale="0.10 0.10 0.10"
+           gltf-model="#h2omodel"
+           animation__rotate = "property: rotation; dur: 6900; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;">
+        </a-entity>
        </a-marker>
 
 
