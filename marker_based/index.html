@@ -18,14 +18,14 @@
           AFRAME.registerComponent("marker-distance", {
 
               init: function () {
-              this.hydrogen = document.querySelector('#HYDROMODEL')
-              this.oxygen = document.querySelector('#OXYMODEL')
-              this.water = document.querySelector('#H2OMODEL')
+              this.Hydro = document.querySelector('#HYDROMODEL')
+              this.Oxygen = document.querySelector('#OXYMODEL')
+              this.H2OWater = document.querySelector('#H2OMODEL')
               this.marker1 = document.querySelector('#HYDROGENN')
               this.marker2 = document.querySelector('#OXYGENN')
-              this.oxcard = document.querySelector('#OXYIMAGE')
-              this.hydrocard = document.querySelector('#HYDROIMAGE')
-              this.h2ocard = document.querySelector('#H2OIMAGE')
+              this.OxygenCard = document.querySelector('#OXYIMAGE')
+              this.HydrogenCard = document.querySelector('#HYDROIMAGE')
+              this.H2oWaterCard = document.querySelector('#H2OIMAGE')
           },
           tick: function()
           {
@@ -42,22 +42,22 @@
               if (markerDistance<2)
               {
 
-                  this.hydrogen.setAttribute("visible", false)
-                  this.oxygen.setAttribute("visible", false)
-                  this.water.setAttribute("visible", true)
-                  this.oxcard.setAttribute("visible", false)
-                  this.hydrocard.setAttribute("visible", false)
-                  this.h2ocard.setAttribute("visible", true)
+                  this.Hydro.setAttribute("visible", false)
+                  this.Oxygen.setAttribute("visible", false)
+                  this.H2OWater.setAttribute("visible", true)
+                  this.OxygenCard.setAttribute("visible", false)
+                  this.HydrogenCard.setAttribute("visible", false)
+                  this.H2oWaterCard.setAttribute("visible", true)
               }
               else
               {
 
-                  this.hydrogen.setAttribute("visible",true)
-                  this.oxygen.setAttribute("visible",true)
-                  this.water.setAttribute("visible", false)
-                  this.oxcard.setAttribute("visible", true)
-                  this.hydrocard.setAttribute("visible", true)
-                  this.h2ocard.setAttribute("visible", false)
+                  this.Hydro.setAttribute("visible",true)
+                  this.Oxygen.setAttribute("visible",true)
+                  this.H2OWater.setAttribute("visible", false)
+                  this.OxygenCard.setAttribute("visible", true)
+                  this.hydrogenCard.setAttribute("visible", true)
+                  this.H2oWaterCard.setAttribute("visible", false)
               }
           },
       });
