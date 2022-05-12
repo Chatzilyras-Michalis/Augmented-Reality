@@ -14,7 +14,55 @@
 
 
     <body style="margin : 0px; overflow: hidden;">
-   
+      <script>
+          AFRAME.registerComponent("marker-distance", {
+
+              init: function () {
+              this.hydrogen = document.querySelector('#HYDROMODEL')
+              this.oxygen = document.querySelector('#OXYMODEL')
+              this.water = document.querySelector('#H2OMODEL')
+              this.marker1 = document.querySelector('#HYDROGENN')
+              this.marker2 = document.querySelector('#OXYGENN')
+              this.oxcard = document.querySelector('#OXYIMAGE')
+              this.hydrocard = document.querySelector('#HYDROIMAGE')
+              this.h2ocard = document.querySelector('#H2OIMAGE')
+          },
+          tick: function()
+          {
+              var marker1Pos, marker2Pos, markerDistance
+
+              marker1Pos = new THREE.Vector3();
+              this.marker1.object3D.getWorldPosition(marker1Pos);
+
+              marker2Pos = new THREE.Vector3();
+              this.marker2.object3D.getWorldPosition(marker2Pos);
+
+              markerDistance = marker1Pos.distanceTo(marker2Pos);
+
+              if (markerDistance<2)
+              {
+
+                  this.hydrogen.setAttribute("visible", false)
+                  this.oxygen.setAttribute("visible", false)
+                  this.water.setAttribute("visible", true)
+                  this.oxcard.setAttribute("visible", false)
+                  this.hydrocard.setAttribute("visible", false)
+                  this.h2ocard.setAttribute("visible", true)
+              }
+              else
+              {
+
+                  this.hydrogen.setAttribute("visible",true)
+                  this.oxygen.setAttribute("visible",true)
+                  this.water.setAttribute("visible", false)
+                  this.oxcard.setAttribute("visible", true)
+                  this.hydrocard.setAttribute("visible", true)
+                  this.h2ocard.setAttribute("visible", false)
+              }
+          },
+      });
+      </script>
+
         <a-scene
     vr-mode-ui="enabled: false;"
     renderer="logarithmicDepthBuffer: true;"
@@ -90,7 +138,7 @@
              visible="true">
          </a-entity>
 
-  <a-image id="H2OIMAGE" src="assets/card-H2O.png" rotation="-90 0 0" geometry="width: 2.5; height: 2.5"></a-image>
+         <a-image id="H2OIMAGE" src="assets/card-H2O.png" rotation="-90 0 0" geometry="width: 2.5; height: 2.5"></a-image>
          <a-entity id="H2OMODEL"  position="0 1.7 0"
            rotation="0 0 0"
            scale="0.10 0.10 0.10"
