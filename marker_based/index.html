@@ -39,7 +39,7 @@
 
               markerDistance = marker1Pos.distanceTo(marker2Pos);
 
-              if (markerDistance<3)
+              if (markerDistance<2)
               {
 
                   this.hydrogen.setAttribute("visible", false)
@@ -113,8 +113,8 @@
         <a-asset-item id="h2omodel" src="assets/h2o.gltf"></a-asset-item>
      </a-assets>
               <!-- marker id=0 -->
-       <a-marker id="HYDROGENN" type="barcode" value="0" >
-         <a-image id="HYDROIMAGE" src="assets/card-H.png" rotation="-90 0 0" geometry="width: 2.5; height: 2.5"></a-image>
+       <a-marker id="HYDROGENN" type="barcode" value="0">
+         <a-image id="HYDROIMAGE" src="assets/card-H.png" rotation="-90 0 0" geometry="width: 2.5; height: 2.5" visible="true"></a-image>
          <a-entity id="HYDROMODEL"  position="0 1.7 0"
            rotation="0 0 0"
            scale="0.10 0.10 0.10"
@@ -129,7 +129,7 @@
 
               <!-- marker id=1 -->
        <a-marker id="OXYGENN" type="barcode" value="1">
-          <a-image id="OXYIMAGE" src="assets/card-O.png" rotation="-90 0 0" geometry="width: 2.5; height: 2.5"></a-image>
+          <a-image id="OXYIMAGE" src="assets/card-O.png" rotation="-90 0 0" geometry="width: 2.5; height: 2.5" visible="true"></a-image>
           <a-entity  id="OXYMODEL" position="0 1.7 0"
             rotation="0 0 0"
             scale="0.10 0.10 0.10"
@@ -138,7 +138,7 @@
              visible="true">
          </a-entity>
 
-         <a-image id="H2OIMAGE" src="assets/card-H2O.png" rotation="-90 0 0" geometry="width: 2.5; height: 2.5"></a-image>
+         <a-image id="H2OIMAGE" src="assets/card-H2O.png" rotation="-90 0 0" geometry="width: 2.5; height: 2.5" visible="false"></a-image>
          <a-entity id="H2OMODEL"  position="0 1.7 0"
            rotation="0 0 0"
            scale="0.10 0.10 0.10"
