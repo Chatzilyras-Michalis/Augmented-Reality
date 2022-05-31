@@ -19,28 +19,15 @@
 		embedded
 		arjs='sourceType: webcam; debugUIEnabled: false;'>
 
- <!-- La Sagrada Família Model-->
             <a-assets>
-               <a-asset-item id="sagrada" src="assets/test.gltf"></a-asset-item>
+               <a-asset-item id="sagrada" src="assets/sphinx.gltf"></a-asset-item>
             </a-assets>
 
-<!-- La Sagrada Família Model and Text-->
-            <a-entity id="sagrada_model" position="0 0 -180" class="click"
+            <a-entity id="sphinx" position="0 0 -180"
                       scale="1 1 1"
-                      gltf-model="#sagrada"
+                      gltf-model="#sphinx"
                       gps-entity-place="latitude: 41.546322; longitude: 2.44775;" information>
             </a-entity>
-
-
-<!-- La Sagrada Família Text-->
-      <a-text id="text_info" class="clickable" text="value: Sagrada Família Basílica i Temple Expiatori
-           de la Sagrada Família
-           Templo Expiatorio de la Sagrada Familia"
-           position="0 0 -90"
-           color= "#F4D35E"
-           scale="7 7 7"
-           visible="false">
-      </a-text>
 
         <a-camera
             rotation-reader
