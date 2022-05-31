@@ -1,38 +1,12 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>GeoAR.js demo</title>
-    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
-    <!-- <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>-->
-    <script src='build/aframe-ar-nft.js'></script>
-
+    <title>Augmented Reality Web Applications</title>
 </head>
 
-
-<body style='margin: 0; overflow: hidden;'>
-
-    <a-scene
-        vr-mode-ui="enabled: false"
-
-		embedded
-		arjs='sourceType: webcam; debugUIEnabled: false;'>
-
-            <a-assets>
-               <a-asset-item id="test" src="assets/test.gltf"></a-asset-item>
-            </a-assets>
-
-            <a-entity id="test" position="0 0 -180"
-                      scale="1 1 1"
-                      gltf-model="#test"
-                      gps-entity-place="latitude: 41.546322; longitude: 2.44775;" information>
-            </a-entity>
-
-        <a-camera
-            rotation-reader
-            gps-camera="simulateLatitude: 41.546322; longitude: 2.44775; minDistance: 1; maxDistance: 700;"
-        >
-		</a-camera>
-	</a-scene>
+<body>
+    <br><a href="marker_based/index.html">Marker-Based</a>
+    <br><a href="location_based/index.html">Location-Based</a>
+    <br><a href="location_based/syros.html">Syros Location-Based</a>
 </body>
