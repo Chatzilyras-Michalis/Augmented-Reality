@@ -9,7 +9,20 @@
     <script src='build/aframe-ar-nft.js'></script>
 
 </head>
-
+<script>
+		  AFRAME.registerComponent("text-show", {
+			init: function() {
+			let toggle = false
+			  this.el.addEventListener("click", (e) => {
+				let box = document.querySelectorAll(".clickable")
+				box.forEach(function(el) {
+					el.setAttribute("visible", toggle)
+				})
+				toggle = !toggle
+			  })
+			}
+		  })
+	</script>
 
 <body style='margin: 0; overflow: hidden;'>
 
@@ -18,16 +31,32 @@
 
 		embedded
 		arjs='sourceType: webcam; debugUIEnabled: false;'>
+    <a-entity id="cameraRig">
+      <a-entity id="head" camera wasd-controls look-controls cursor="rayOrigin: mouse" position="0 1.6 0"></a-entity>
+      </a-entity>
+
 
             <a-assets>
                <a-asset-item id="test" src="assets/test.gltf"></a-asset-item>
             </a-assets>
 
-            <a-entity id="test" position="0 0 -180"
+            <a-entity id="test" position="0 0 -180" class="click"
                       scale="1 1 1"
                       gltf-model="#test"
                       gps-entity-place="latitude: 41.546322; longitude: 2.44775;" information>
             </a-entity>
+
+            <a-text id="text" class="clickable" text="value: test"
+
+           position="0 0 -90"
+           color= "#8ECAB3"
+           scale="9 9 9"
+           visible="false">
+           </a-text>
+
+
+
+
 
         <a-camera
             rotation-reader
