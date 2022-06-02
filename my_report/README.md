@@ -28,7 +28,12 @@ I procceded by adding (a-text)in my code from [here](https://stackoverflow.com/q
 (**note** the entity of the marker distance had to be added before the markers of oxygen hydrogen and h2o)
 
 # 3rd Deliverable 
-- (Place of Interest)Firstly i created a new asset to set the gltf model of the pyramdid of Giza.The model of the pyramid was found [here](https://sketchfab.com/feed?gclid=CjwKCAjwv-GUBhAzEiwASUMm4hktMGUqVvSpMONTaKz5gQwut6va16T84BjftLPkHUwr9gzF_2mTWBoCuiQQAvD_BwE&utm_campaign=358341061&utm_content=414556469961&utm_medium=cpc&utm_source=googleads&utm_term=sketch%20fab)![2022-06-02 (2)](https://user-images.githubusercontent.com/100956239/171689542-7f9e9ee0-b395-4b3d-aa40-0912264c3ec4.png)
+- (Place of Interest)Firstly i created a new asset to set the gltf model of the pyramdid of Giza.The model of the pyramid was found [here](https://sketchfab.com/feed?gclid=CjwKCAjwv-GUBhAzEiwASUMm4hktMGUqVvSpMONTaKz5gQwut6va16T84BjftLPkHUwr9gzF_2mTWBoCuiQQAvD_BwE&utm_campaign=358341061&utm_content=414556469961&utm_medium=cpc&utm_source=googleads&utm_term=sketch%20fab).![2022-06-02 (2)](https://user-images.githubusercontent.com/100956239/171689542-7f9e9ee0-b395-4b3d-aa40-0912264c3ec4.png)
+Then i created an (**a-entity**) to add the gltf model inside, i edited the scale and the position of the pyramid and i also added a (**class=click**).
+Furthermore i created  an (**a-text**) and i added the codes (**class="clickable**) and (**visible="false**) so when you interact with the mouse a text can appear.
+In addition i edited the scale,the color and position of the text.
+Lastly for the click event through trial and error i used [this](https://glitch.com/~salty-partner-1) website ![2022-06-02](https://user-images.githubusercontent.com/100956239/171694503-79e15757-71e2-4766-92af-c4b9906c2ed1.png)
+- (Syros Place Of Interest)
 
 
 
