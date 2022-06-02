@@ -48,5 +48,12 @@ I procceded by adding (a-text)in my code from [here](https://stackoverflow.com/q
  [Stemkoski](https://stemkoski.github.io/AR.js-examples/index.html?fbclid=IwAR3rNAQHrtUZ_n_ZzdC1NlWbWdfqfk39BByAimab6U210yrv7FDFGMxTb4I)
  [GitHub](https://github.com/nicolocarpignoli/artoolkit-barcode-markers-collection)
  [blender](https://www.blender.org/)
+- DEL3
+[3DModel.SketchFab](https://sketchfab.com/feed?gclid=CjwKCAjwv-GUBhAzEiwASUMm4jqk2QiT5_lLoLi7IPMMDZuuO06bTQABpyMrQmHwX-FNzmhmrMYzbxoCbIEQAvD_BwE&utm_campaign=358341061&utm_content=414556469961&utm_medium=cpc&utm_source=googleads&utm_term=sketch%20fab)
+[Coordinates](https://www.latlong.net/)
+[click.event1](https://medium.com/swlh/how-to-handle-click-events-on-ar-js-f397ea5994d)
+[click.event2](https://stackoverflow.com/questions/63151052/click-event-on-a-entity-in-ar-js)
+[click.event3](https://stackoverflow.com/questions/63151052/click-event-on-a-entity-in-ar-js)
+[click.event4](https://glitch.com/edit/#!/salty-partner-1?path=index.html%3A7%3A74)
 
 
