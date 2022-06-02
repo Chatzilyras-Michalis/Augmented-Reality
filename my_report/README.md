@@ -47,6 +47,6 @@ I procceded by adding (a-text)in my code from [here](https://stackoverflow.com/q
  [Youtube](https://www.youtube.com/watch?v=jLGWE335J28)
  [Stemkoski](https://stemkoski.github.io/AR.js-examples/index.html?fbclid=IwAR3rNAQHrtUZ_n_ZzdC1NlWbWdfqfk39BByAimab6U210yrv7FDFGMxTb4I)
  [GitHub](https://github.com/nicolocarpignoli/artoolkit-barcode-markers-collection)
- Blender
+ [blender](https://www.blender.org/)
 
 
