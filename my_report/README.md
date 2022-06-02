@@ -64,5 +64,5 @@ Lastly for the click event through trial and error i used [this](https://glitch.
 [click.event2](https://stackoverflow.com/questions/63151052/click-event-on-a-entity-in-ar-js)
 [click.event3](https://stackoverflow.com/questions/63151052/click-event-on-a-entity-in-ar-js)
 [click.event4](https://glitch.com/edit/#!/salty-partner-1?path=index.html%3A7%3A74)
-
+[click.event5](https://l.facebook.com/l.php?u=https%3A%2F%2Fblog.davidvassallo.me%2F2019%2F09%2F26%2Faugmented-reality-using-aframe-tips-tricks%2F%3Ffbclid%3DIwAR1q925mi-GtWTObZlBCdMUncqJUaRYyXTK-YlB07rm7K1yUjaBynN5QRPU&h=AT0oQCZjTVFJPH1O67IEr7cTsNnUXnrwZnfwTd9fPx13jkobEdmEFVvlB54ffzvuWJft0QKLRXJOIJ_7zwJLlaO3hSirt4yI8P9O7IRXvHpFQ3vbZJZ_rLOWNOrTpud5byron5sbUTD7d_Ap3LRvpQ)
 
