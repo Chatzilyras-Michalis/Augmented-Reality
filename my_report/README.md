@@ -28,6 +28,7 @@ I procceded by adding (a-text)in my code from [here](https://stackoverflow.com/q
 (**note** the entity of the marker distance had to be added before the markers of oxygen hydrogen and h2o)
 
 # 3rd Deliverable 
+- (Place of Interest)Firstly i created a new asset to set the gltf model of the pyramdid of Giza.The model of the pyramid was found [here](https://sketchfab.com/feed?gclid=CjwKCAjwv-GUBhAzEiwASUMm4hktMGUqVvSpMONTaKz5gQwut6va16T84BjftLPkHUwr9gzF_2mTWBoCuiQQAvD_BwE&utm_campaign=358341061&utm_content=414556469961&utm_medium=cpc&utm_source=googleads&utm_term=sketch%20fab)![2022-06-02 (2)](https://user-images.githubusercontent.com/100956239/171689102-1049a2e1-9ad4-4036-91db-fd23fc94eff9.png)
 
 
 # Conclusions
