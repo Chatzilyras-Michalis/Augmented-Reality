@@ -16,10 +16,13 @@
 		embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
 
-        <a-image gps-entity-place="latitude: 37.437750; longitude: 24.933291;" src="assets/alterlife.png" height="1" width="1" </a-image>
+         <a-entity gps-entity-place="latitude: 37.437750; longitude: 24.933291;" src="assets/alterlife.png" height="1" width="1" >
+         
+		 <a-text id="text" text="GYM" position="0 0 -60" color= "#8ECAB3" scale="9 9 9" </a-text>
+          
+		 <a-image src="assets/alterlife.png" position="0 0 -180" width="0.5" height="0.5"></a-image>/>    
         
-        
-        
+        </a-entity>
         <a-camera gps-camera rotation-reader></a-camera>
 	</a-scene>
 </body>
