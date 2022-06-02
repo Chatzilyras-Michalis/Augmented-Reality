@@ -34,7 +34,7 @@ Furthermore i created  an (**a-text**) and i added the codes (**class="clickable
 In addition i edited the scale,the color and position of the text.
 Lastly for the click event through trial and error i used [this](https://glitch.com/~salty-partner-1) website. ![2022-06-02](https://user-images.githubusercontent.com/100956239/171694503-79e15757-71e2-4766-92af-c4b9906c2ed1.png)
 - (Syros Place Of Interest)For the place of interest in Syros i created an (**a-image**) i used the same method to add a png as the previous deliverable, i added the correct coordinates and i edited the (**height**) and the (**width**) of the image.
-- (NOTES)The coordinates were found from [this](https://www.latlong.net/) website.![2022-06-02 (3)](https://user-images.githubusercontent.com/100956239/171695841-4b77d10a-ce4d-481e-b45b-1a142f28a9aa.png)The gltf models were hard to find because they werent free or they had big capacity.
+- (NOTES)The coordinates were found from [this](https://www.latlong.net/) website.The gltf models were hard to find because they werent free or they had big capacity.![2022-06-02 (3)](https://user-images.githubusercontent.com/100956239/171695841-4b77d10a-ce4d-481e-b45b-1a142f28a9aa.png)
 
 
 
